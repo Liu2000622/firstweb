@@ -1,0 +1,76 @@
+/*css语法
+1.选择器{声明块}
+选择器：选择指定的元素
+        id选择器 #+id{声明块}
+        class选择器 .+class{声明块}
+        并集选择器：  1，2，3，{声明块}  1，2，3，可以是标签，classname，idname
+        交集选择器：选择同时满足多个选择器的元素  元素类型.classname or idname{声明块}
+        通配选择器：body中全部的选择器  *{声明块}
+        后代选择器 举例 #id1 div span{声明块} 选中id为id1标签中的div类型中的span标签 不推荐！！！！
+        子元素选择器：父元素>子元素{声明块} div>span{}
+        伪类选择器：link正常链接 visited访问过的链接 hover鼠标划过的链接 active正在点击的链接
+                    hover不能写道active下面
+声明块：设置样式
+
+*/
+.fsul{
+    font-size: xx-large;
+    list-style: none;
+    color: chartreuse;
+    font-family:"Times New Roman";
+    line-height: 70px;
+    text-decoration: none;
+
+}
+
+#em{
+    font-size: xx-large;
+    background-color: blueviolet;
+    color: chartreuse;
+    width: 200px;
+}
+#st{
+    font-size: large;
+    background-color: #e21c29;
+    color: #1c25ff;
+    width: 200px;
+}
+p {
+    color: #628ce2;
+    font-size: larger;
+}
+
+/*#fs{
+    color: #91e273;
+    font-size-adjust: inherit;
+    font-size: x-large;
+    background-color: #b6bfff;
+    width: 200px;
+}*/
+.fsc {
+    font-size: xx-large;
+    font-family: 华文彩云;
+}
+
+div.fsc {
+    font-size: xx-large;
+
+}
+
+a:link {
+    font-size: xx-large;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+a:active{
+    color: deeppink;
+}
+
+

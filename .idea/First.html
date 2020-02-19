@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="test"><!--关键字-->
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="3;url=http://www.baidu.com">-->
+    <!--refresh刷新页面 content =时间；url=网址-->
+    <title>Day01</title>
+    <!--style写在head标签中
+    通过css选择器选择要修改的标签
+    推荐使用link引入外联样式表
+    -->
+    <link rel="stylesheet" type="text/css" href="first.css"/>
+    <!--<style type="text/css">
+        p {
+            color: #628ce2;
+            font-size: larger;
+        }
+
+    </style>-->
+
+</head>
+<body>
+<br>
+<!--html5 css js-->
+<!--属性名字=属性值-->
+<!--size max =7-->
+<h1>second<font color="#ffd700" size="55"> page</font></h1><!--<h1>此标签为标题-->
+<h3> 二级标题 </h3><!--h1~h6   6级标题  只是用到h3为止-->
+<p> 段落
+    <br>段落</br>
+    <!--转义字符串
+        空格&nbsp
+    -->
+</p>
+<a title="www" href="http://www.baidu.com" id="third"><!--a元素可以包含任意元素 除了自己本身-->
+    <div style="text-decoration: none" id="fis"><!--div是一个块元素   独占一行
+对页面进行布局
+-->
+        这是一个div标签
+    </div>
+</a>
+<div id="2" class="fsc"><!--div是一个块元素   独占一行
+对页面进行布局
+-->
+    这div
+</div>
+<span id="fs" class="fsc">
+    <!--内联元素 不会独占一行 行内元素-->
+    我是一个span
+</span>
+<br/>
+<span id="fs1" class="fsc">
+    <!--内联元素 不会独占一行 行内元素-->
+    我是一个span
+</span>
+<p id="em">验证<em>em</em>标签</p>
+<p id="st">验证<em>strong</em>标签</p>
+<img src="1.jfif" width="100px" height="100px"><!--img标签插入的是图片 src＋图片名字  路径  文件夹名字/name2/name3/-->
+<img src="">
+<!--xhtml语法规范
+1.html中不区分大小写，大多数都使用小写
+2.HTML中注释不能嵌套
+3.html标签必须结构完整
+4.标签可以嵌套但是不能交叉嵌套  <p><font></p></font>错的
+5.标签中值必须加引号
+-->
+
+<!--内联框架
+src外部页面的路径
+-->
+<iframe src="http://www.taobao.com" width="1000px" height="1000px"></iframe><!--不推荐使用内联框架-->
+
+<!--超链接
+href＋地址
+target属性：打开新页面的位置
+           1.blank新页面
+           2.可以加内联框架名字在内联框架中打开新页面
+-->
+
+<a href="http://www.4399.com" target="_blank"> 4399</a>
+<center><a href="http://www.taobao.com" target="_blank">超链接
+
+</a>
+    <input type="button" value="cars">
+    <center>
+        <input type="submit" value="sub">
+        <input type="text" value="answer">
+        <label for="first"><font size="7">男</font></label>
+        <input type="radio" value="男" id="first">
+        <br/>
+        <label for="second"><font size="7">女</font></label>
+        <input type="radio" value="女" id="second">
+    </center>
+    <form>
+        <!--元素之间的关系
+        父元素：直接包含子元素的元素
+        祖先和后代不直接包含
+        -->
+        <select>
+            <option style="text-decoration: none" value="http://www.baidu.com">baidu</option>
+            <option value="http://www.taobao.com">taobao</option>
+        </select>
+    </form>
+</center>
+
+<!--列表标签-->
+<!--1.ul无序列表
+li，ul都是块
+有序列表和无序列表可以嵌套使用-->
+<ul class="fsul">
+    <li><a title="www.baidu.com" href="http://www.baidu.com">baidu</a></li>
+    <li><a title="www.jd.com" href="http://www.jd.com">jd</a></li>
+    <li>opt3</li>
+</ul>
+<!--2.有序列表-->
+<ol>
+    <li>order1</li>
+    <li>order2</li>
+    <li>order3</li>
+</ol>
+<!--定义列表-->
+<dl>
+    <dt>长方形
+    <dd>
+    四条边
+    </dd>
+    </dt>
+</dl>
+</body>
+</html>
